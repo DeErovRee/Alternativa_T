@@ -57,9 +57,10 @@
 }
 
 body {
-  background-image: url(../images/background.png);
+  background-image: url(../images/full-background.png);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position-x: -900px;
+  background-position-y: -100px;
 }
 body header .company {
   display: flex;
@@ -217,4 +218,117 @@ body main .info p {
   font-size: 22px;
   line-height: 155%;
   text-align: justify;
+}
+body main .product {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 99px;
+  justify-content: center;
+}
+body main .product-card {
+  width: 370px;
+  height: 322px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+body main .product-card:nth-child(3n+2) {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+body main .product-card:hover {
+  box-shadow: -1px 11px 11px rgba(137, 218, 251, 0.68);
+}
+body main .product-card p {
+  margin: 15px;
+}
+body main .expiriens {
+  display: flex;
+  font-family: "Roboto";
+  color: #60B7D9;
+  margin-top: 202px;
+}
+body main .expiriens-card {
+  text-align: center;
+}
+body main .expiriens-card h1 {
+  font-size: 100px;
+  line-height: 121.9px;
+}
+body main .expiriens-card p {
+  font-size: 24px;
+  line-height: 29.26px;
+}
+body main .expiriens-card:nth-child(2) {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+body main .goods {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 139px;
+}
+body main .goods h3 {
+  width: 100%;
+  font-family: "Montserrat";
+  font-size: 32px;
+  line-height: 49.6px;
+  text-align: left;
+  margin-left: 20px;
+}
+body main .goods-popular {
+  display: flex;
+  margin-top: 18px;
+}
+body main .goods-popular-card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Montserrat";
+  margin: 0 11px 0 11px;
+}
+body main .goods-popular-card:first-child {
+  margin: 0 11px 0 0;
+}
+body main .goods-popular-card:last-child {
+  margin: 0 0 0 11px;
+}
+body main .goods-popular-card:hover {
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.26);
+}
+body main .goods-popular-card img {
+  margin: -20px -20px 0 -20px;
+}
+body main .goods-popular-card .goods-type {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.94px;
+}
+body main .goods-popular-card h4 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.82px;
+}
+body main .goods-popular-card .price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.38px;
+}
+body main .goods-popular-card .btn-buy {
+  width: 166px;
+  height: 38px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f1524f;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.09px;
+  margin: 8px;
 }/*# sourceMappingURL=style.css.map */
