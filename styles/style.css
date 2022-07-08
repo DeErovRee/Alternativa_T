@@ -57,10 +57,10 @@
 }
 
 body {
+  width: 100%;
   background-image: url(../images/full-background.png);
   background-repeat: no-repeat;
-  background-position-x: -900px;
-  background-position-y: -100px;
+  background-position: 44% -3%;
 }
 body header .company {
   display: flex;
@@ -159,13 +159,17 @@ body header .menu ul .menu-tabs ul li {
   line-height: 21px;
   color: #1C2128;
 }
+body header .menu ul .menu-tabs ul li a {
+  text-decoration: none;
+  color: #000;
+}
+body header .menu ul .menu-tabs ul li a:hover {
+  cursor: pointer;
+  color: #F1524F;
+}
 body header .menu ul .menu-tabs ul li:nth-child(2) {
   margin-right: 35px;
   margin-left: 35px;
-}
-body header .menu ul .menu-tabs ul li:hover {
-  cursor: pointer;
-  color: #F1524F;
 }
 body main .info {
   margin-top: 51px;
@@ -243,6 +247,7 @@ body main .product-card:nth-child(3n+2) {
 }
 body main .product-card:hover {
   box-shadow: -1px 11px 11px rgba(137, 218, 251, 0.68);
+  cursor: pointer;
 }
 body main .product-card p {
   margin: 15px;
@@ -299,7 +304,8 @@ body main .goods-popular-card:last-child {
   margin: 0 0 0 11px;
 }
 body main .goods-popular-card:hover {
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  box-shadow: 0px 49px 14px rgba(0, 0, 0, 0.01), 0px 31px 12px rgba(0, 0, 0, 0.04), 0px 18px 11px rgba(0, 0, 0, 0.15), 0px 8px 8px rgba(0, 0, 0, 0.26), 0px 2px 4px rgba(0, 0, 0, 0.29), 0px 0px 0px rgba(0, 0, 0, 0.3);
 }
 body main .goods-popular-card img {
   margin: -20px -20px 0 -20px;
@@ -331,4 +337,277 @@ body main .goods-popular-card .btn-buy {
   font-size: 18px;
   line-height: 21.09px;
   margin: 8px;
+}
+body main .goods-popular-card .btn-buy:hover {
+  cursor: pointer;
+  background-color: #CC4744;
+}
+body main .ribbon {
+  display: flex;
+  width: 100%;
+  background-color: #60B7D9;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 49px 14px rgba(0, 0, 0, 0.01), 0px 31px 12px rgba(0, 0, 0, 0.04), 0px 18px 11px rgba(0, 0, 0, 0.15), 0px 8px 8px rgba(0, 0, 0, 0.26), 0px 2px 4px rgba(0, 0, 0, 0.29), 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+body main .ribbon h3 {
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.51px;
+  color: #ffffff;
+  width: 30%;
+  margin: 18px 0 18px 0;
+  text-align: center;
+}
+body main .document h2 {
+  font-family: "Oswald";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 71.14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 130px;
+}
+body main .document-show {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 27.22px;
+}
+body main .document-show button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #ffffff;
+}
+body main .document-show button:last-child {
+  transform: rotate(180deg);
+}
+body main .document-show button .svg-arrow:hover {
+  cursor: pointer;
+  fill: #F1524F;
+  filter: drop-shadow(0px 0px 3.0431px #E45653);
+}
+body main .document-show img {
+  width: 430px;
+  height: 580px;
+  filter: drop-shadow(0px 49px 14px rgba(0, 0, 0, 0.01)) drop-shadow(0px 31px 12px rgba(0, 0, 0, 0.04)) drop-shadow(0px 18px 11px rgba(0, 0, 0, 0.15)) drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.26)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.29)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3));
+}
+body main .document-show img:last-child {
+  margin-left: 74px;
+}
+body main .question {
+  margin-top: 67px;
+}
+body main .question form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 739px;
+  height: 648px;
+  border-radius: 10px;
+  box-shadow: 0px 172px 69px rgba(0, 0, 0, 0.03), 0px 97px 58px rgba(0, 0, 0, 0.1), 0px 43px 43px rgba(0, 0, 0, 0.17), 0px 11px 24px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2);
+  padding: 33px 46px 38px;
+}
+body main .question form h3 {
+  font-family: "Montserrat";
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 58.9px;
+}
+body main .question form input {
+  border: 2px solid #BEBEBE;
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 14px 12px;
+  width: 100%;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27.9px;
+}
+body main .question form .name {
+  margin-top: 27px;
+}
+body main .question form .number {
+  margin-top: 23px;
+}
+body main .question form .message {
+  margin-top: 27px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #BEBEBE;
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 14px 12px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27.9px;
+}
+body main .question form button {
+  border: none;
+  border-radius: 10px;
+  background-color: #F1524F;
+  padding: 13px 120px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 43.4px;
+  margin-top: 33px;
+  color: #ffffff;
+}
+body main .question form button:hover {
+  background-color: #CC4744;
+  cursor: pointer;
+}
+body main .question form div {
+  display: flex;
+  margin-top: 20px;
+}
+body main .question form div input[type=checkbox]:checked, body main .question form div input[type=checkbox]:not(:checked) {
+  display: none;
+}
+body main .question form div input[type=checkbox]:checked + label, body main .question form div input[type=checkbox]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+body main .question form div input[type=checkbox]:checked + label:before, body main .question form div input[type=checkbox]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BEBEBE;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+body main .question form div input[type=checkbox]:checked + label:before {
+  background-color: #CC4744;
+}
+body main .question form div input[type=checkbox]:checked + label:after, body main .question form div input[type=checkbox]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  transition: all 0.2s ease;
+  left: 4.5px;
+  top: 5.5px;
+  width: 7px;
+  height: 3px;
+  border-radius: 1px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  transform: rotate(-45deg);
+}
+body main .question form div input[type=checkbox]:not(:checked) + label:after {
+  opacity: 0;
+}
+body main .question form div input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+body main .question form div label {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21.7px;
+}
+body main .question form div label a {
+  text-decoration: underline;
+  color: #000;
+}
+body main .question form div label a:hover {
+  color: #F1524F;
+  cursor: pointer;
+}
+body footer {
+  background: linear-gradient(90deg, #F14F54 14.4%, #FF8F20 86.8%);
+  margin-top: 108px;
+}
+body footer .bottom {
+  padding-top: 44px;
+  padding-bottom: 85.65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+body footer .bottom .company {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-right: 30px;
+}
+body footer .bottom .company h5 {
+  display: flex;
+  margin-bottom: 22px;
+}
+body footer .bottom .company h5 svg {
+  margin-right: 9px;
+}
+body footer .bottom .company h5 span {
+  font-family: "Oswald";
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+body footer .bottom .company p {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.38px;
+}
+body footer .bottom .site {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+body footer .bottom .site a {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 200%;
+  color: #ffffff;
+  text-decoration: none;
+}
+body footer .bottom .site a:hover {
+  cursor: pointer;
+}
+body footer .bottom .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 10px;
+}
+body footer .bottom .address p {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+body footer hr {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+body footer .copy {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+body footer .copy p {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 21.94px;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
