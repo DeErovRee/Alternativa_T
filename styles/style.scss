@@ -68,7 +68,11 @@ body {
     width: 100%;
     background-image: url(../images/full-background.png);
     background-repeat: no-repeat;
+<<<<<<< HEAD
     background-position: 44% -3%;
+=======
+    background-position: 44% -7%;
+>>>>>>> main
 
     header {
 
@@ -414,6 +418,7 @@ body {
                             cursor: pointer;
                             background-color: #CC4744;
                         }
+<<<<<<< HEAD
                     }
                 }
             }
@@ -563,6 +568,8 @@ body {
                     &:hover {
                         background-color: #CC4744;
                         cursor: pointer;
+=======
+>>>>>>> main
                     }
                 }
 
@@ -658,6 +665,130 @@ body {
     footer {
         background: linear-gradient(90deg, #F14F54 14.4%, #FF8F20 86.8%);
         margin-top: 108px;
+
+        .bottom {
+            padding-top: 44px;
+            padding-bottom: 85.65px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            color: #ffffff;
+
+            .company {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                margin-right: 30px;
+
+                h5 {
+                    display: flex;
+                    margin-bottom: 22px;
+
+                    svg {
+                        margin-right: 9px;
+                    }
+
+                    span {
+                        font-family: 'Oswald';
+                        font-size: 22px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+
+                p {
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 24.38px;
+                }
+            }
+
+            .site {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 80%;
+
+                a {
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 200%;
+                    color: #ffffff;
+                    text-decoration: none;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .address {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                margin-top: 10px;
+
+                p {
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        hr {
+            border: none;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .copy {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 23px;
+            padding-bottom: 23px;
+
+            p {
+                font-family: 'Montserrat';
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 21.94px;
+                color: #ffffff;
+            }
+        }
+
+        .ribbon {
+            display: flex;
+            width: 100%;
+            background-color: #60B7D9;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 49px 14px rgba(0, 0, 0, 0.01), 0px 31px 12px rgba(0, 0, 0, 0.04), 0px 18px 11px rgba(0, 0, 0, 0.15), 0px 8px 8px rgba(0, 0, 0, 0.26), 0px 2px 4px rgba(0, 0, 0, 0.29), 0px 0px 0px rgba(0, 0, 0, 0.3);
+
+            h3 {
+                font-family: 'Montserrat';
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 58.51px;
+                color: #ffffff;
+                width: 30%;
+                margin: 18px 0 18px 0;
+                text-align: center;
+            }
+        }
+
+        .document {
+            
+        }
+    }
+
+    footer {
+        background: linear-gradient(90deg, #F14F54 14.4%, #FF8F20 86.8%);
 
         .bottom {
             padding-top: 44px;

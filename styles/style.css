@@ -60,7 +60,11 @@ body {
   width: 100%;
   background-image: url(../images/full-background.png);
   background-repeat: no-repeat;
+<<<<<<< HEAD
   background-position: 44% -3%;
+=======
+  background-position: 44% -7%;
+>>>>>>> main
 }
 body header .company {
   display: flex;
@@ -347,6 +351,10 @@ body main .ribbon {
   width: 100%;
   background-color: #60B7D9;
   margin-top: 100px;
+<<<<<<< HEAD
+=======
+  margin-bottom: 100px;
+>>>>>>> main
   align-items: center;
   justify-content: center;
   box-shadow: 0px 49px 14px rgba(0, 0, 0, 0.01), 0px 31px 12px rgba(0, 0, 0, 0.04), 0px 18px 11px rgba(0, 0, 0, 0.15), 0px 8px 8px rgba(0, 0, 0, 0.26), 0px 2px 4px rgba(0, 0, 0, 0.29), 0px 0px 0px rgba(0, 0, 0, 0.3);
@@ -361,6 +369,7 @@ body main .ribbon h3 {
   margin: 18px 0 18px 0;
   text-align: center;
 }
+<<<<<<< HEAD
 body main .document h2 {
   font-family: "Oswald";
   font-size: 48px;
@@ -530,6 +539,10 @@ body main .question form div label a:hover {
 body footer {
   background: linear-gradient(90deg, #F14F54 14.4%, #FF8F20 86.8%);
   margin-top: 108px;
+=======
+body footer {
+  background: linear-gradient(90deg, #F14F54 14.4%, #FF8F20 86.8%);
+>>>>>>> main
 }
 body footer .bottom {
   padding-top: 44px;
