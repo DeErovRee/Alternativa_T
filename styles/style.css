@@ -60,11 +60,7 @@ body {
   width: 100%;
   background-image: url(../images/full-background.png);
   background-repeat: no-repeat;
-<<<<<<< HEAD
   background-position: 44% -3%;
-=======
-  background-position: 44% -7%;
->>>>>>> main
 }
 body header .company {
   display: flex;
@@ -108,16 +104,184 @@ body header .company-working_time {
 body header .company-working_time p:nth-child(1n+2) {
   margin-top: 7px;
 }
-body header .company-phone-number {
-  font-weight: 700;
-  font-size: 24px;
-  color: #1C2128;
+body header .company-phone input:focus,
+body header .company-phone button:focus {
+  outline: none;
 }
-body header .company-phone-note {
+body header .company-phone input:focus-visible,
+body header .company-phone button:focus-visible {
+  outline: 2px solid #F1524F;
+}
+body header .company-phone #switch-callback {
+  display: none;
+}
+body header .company-phone #switch-callback:checked ~ .callback-list-wrp {
+  display: block;
+}
+body header .company-phone .callback {
+  box-sizing: border-box;
+  /* box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21); */
+  /* NB! */
+  position: relative;
+}
+body header .company-phone .callback-btn {
+  display: block;
+  color: #ffffff;
+}
+body header .company-phone .callback-btn span {
+  cursor: pointer;
   font-weight: 600;
   font-size: 16px;
   line-height: 19.5px;
   color: #676767;
+}
+body header .company-phone .callback-btn svg {
+  margin: 0 0 0 11px;
+  fill: currentColor;
+}
+body header .company-phone .callback-list-wrp {
+  z-index: 1;
+  display: none;
+  width: 739px;
+  position: absolute;
+  top: 54px;
+  right: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+body header .company-phone .callback-list-wrp form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 45px;
+}
+body header .company-phone .callback-list-wrp form h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 49.6px;
+  text-align: center;
+  margin: 0 -45px;
+}
+body header .company-phone .callback-list-wrp form input {
+  width: 100%;
+  margin-top: 21px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  padding: 12px;
+  background: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27.9px;
+}
+body header .company-phone .callback-list-wrp form input:nth-child(2) {
+  margin-top: 41px;
+}
+body header .company-phone .callback-list-wrp form input::-moz-placeholder {
+  color: #d8d8d8;
+}
+body header .company-phone .callback-list-wrp form input:-ms-input-placeholder {
+  color: #d8d8d8;
+}
+body header .company-phone .callback-list-wrp form input::placeholder {
+  color: #d8d8d8;
+}
+body header .company-phone .callback-list-wrp form button {
+  border: none;
+  border-radius: 10px;
+  background-color: #F1524F;
+  padding: 13px 120px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 43.4px;
+  margin-top: 33px;
+  color: #ffffff;
+}
+body header .company-phone .callback-list-wrp form button:hover {
+  background-color: #CC4744;
+  cursor: pointer;
+}
+body header .company-phone .callback-list-wrp form div {
+  display: flex;
+  margin-top: 20px;
+}
+body header .company-phone .callback-list-wrp form div input[type=checkbox]:checked, body header .company-phone .callback-list-wrp form div input[type=checkbox]:not(:checked) {
+  display: none;
+}
+body header .company-phone .callback-list-wrp form div input[type=checkbox]:checked + label, body header .company-phone .callback-list-wrp form div input[type=checkbox]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+body header .company-phone .callback-list-wrp form div input[type=checkbox]:checked + label:before, body header .company-phone .callback-list-wrp form div input[type=checkbox]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #BEBEBE;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+body header .company-phone .callback-list-wrp form div input[type=checkbox]:checked + label:before {
+  background-color: #CC4744;
+}
+body header .company-phone .callback-list-wrp form div input[type=checkbox]:checked + label:after, body header .company-phone .callback-list-wrp form div input[type=checkbox]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  transition: all 0.2s ease;
+  left: 4.5px;
+  top: 5.5px;
+  width: 7px;
+  height: 3px;
+  border-radius: 1px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  transform: rotate(-45deg);
+}
+body header .company-phone .callback-list-wrp form div input[type=checkbox]:not(:checked) + label:after {
+  opacity: 0;
+}
+body header .company-phone .callback-list-wrp form div input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+body header .company-phone .callback-list-wrp form div label {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21.7px;
+}
+body header .company-phone .callback-list-wrp form div label a {
+  text-decoration: underline;
+  color: #000;
+}
+body header .company-phone .callback-list-wrp form div label a:hover {
+  color: #F1524F;
+  cursor: pointer;
+}
+body header .company-phone .circle {
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid #F16D7F;
+  width: 19px;
+  border-radius: 19px;
+  height: 19px;
+  position: absolute;
+  background: #F16D7F;
+  right: -9.5px;
+  top: -9.5px;
+}
+body header .company-phone-number {
+  font-weight: 700;
+  font-size: 24px;
+  color: #1C2128;
 }
 body header .menu {
   font-family: "Roboto";
@@ -130,9 +294,142 @@ body header .menu ul {
   align-items: center;
   list-style-type: none;
 }
-body header .menu ul .menu-button {
-  width: 125px;
-  height: 40px;
+body header .menu ul .menu-button input:focus,
+body header .menu ul .menu-button button:focus {
+  outline: none;
+}
+body header .menu ul .menu-button input:focus-visible,
+body header .menu ul .menu-button button:focus-visible {
+  outline: 2px solid #F16D7F;
+}
+body header .menu ul .menu-button #switch-menu {
+  display: none;
+}
+body header .menu ul .menu-button #switch-menu:checked ~ .filter-list-wrp {
+  display: block;
+}
+body header .menu ul .menu-button .filter {
+  box-sizing: border-box;
+  background: #FFFFFF;
+  /* box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21); */
+  /* NB! */
+  position: relative;
+}
+body header .menu ul .menu-button .filter-btn {
+  display: block;
+  width: 100%;
+  padding: 10px 12px 9px;
+  background: linear-gradient(90deg, #f14f54 14.4%, #ff8f20 86.8%);
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: left;
+  box-sizing: border-box;
+}
+body header .menu ul .menu-button .filter-btn span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.09px;
+}
+body header .menu ul .menu-button .filter-btn svg {
+  fill: #ffffff;
+}
+body header .menu ul .menu-button .filter label {
+  text-align: center;
+}
+body header .menu ul .menu-button .filter-list-wrp {
+  z-index: 1;
+  display: none;
+  width: 384px;
+  position: absolute;
+  top: 54px;
+  left: 0;
+  padding: 22px 24px 36px 30px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+body header .menu ul .menu-button .filter-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body header .menu ul .menu-button .filter-list-item {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+}
+body header .menu ul .menu-button .filter-list-item:nth-child(1n+2) {
+  padding-top: 8px;
+}
+body header .menu ul .menu-button .filter-list-item a {
+  color: #1c2128;
+  text-decoration: none;
+}
+body header .menu ul .menu-button .filter-list-item:hover::before {
+  content: "►";
+  position: absolute;
+  left: -20px;
+  color: #cc4744;
+}
+body header .menu ul .menu-button .filter-list-item:hover a {
+  color: #cc4744;
+}
+body header .menu ul .menu-button .filter-list-item:active::before {
+  background-color: #ccc;
+}
+body header .menu ul .menu-button .filter-list-item:active a {
+  color: #ccc;
+}
+body header .menu ul .menu-button .filter-sublist {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0 0 0;
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
+  list-style: none;
+}
+body header .menu ul .menu-button .filter-sublist-item {
+  margin: 0 0 11px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+body header .menu ul .menu-button .filter-sublist-item:last-child {
+  margin: 0 0 24px 0;
+}
+body header .menu ul .menu-button .filter-sublist-item a {
+  color: #6F6E6E;
+  text-decoration: none;
+}
+body header .menu ul .menu-button .filter-sublist-item:hover a {
+  color: #EF5B70;
+}
+body header .menu ul .menu-button .filter-sublist-item:active a {
+  color: #000;
+}
+body header .menu ul .menu-button .circle {
+  color: #ffffff;
+  text-align: center;
+  border: 1px solid #F16D7F;
+  width: 19px;
+  border-radius: 19px;
+  height: 19px;
+  position: absolute;
+  background: #F16D7F;
+  right: -9.5px;
+  top: -9.5px;
 }
 body header .menu ul .menu-button-catalog {
   display: flex;
@@ -150,7 +447,7 @@ body header .menu ul .menu-button-catalog svg {
   margin-right: 5.75px;
 }
 body header .menu ul .menu-tabs {
-  margin-left: 120px;
+  margin-left: 125px;
 }
 body header .menu ul .menu-tabs ul {
   padding: 0;
@@ -177,6 +474,7 @@ body header .menu ul .menu-tabs ul li:nth-child(2) {
 }
 body main .info {
   margin-top: 51px;
+  margin-bottom: 180px;
 }
 body main .info article {
   width: 50%;
@@ -191,7 +489,6 @@ body main .info article {
 body main .info ul {
   list-style-type: none;
   margin-top: 27px;
-  margin-bottom: 304px;
 }
 body main .info ul li {
   font-family: "Montserrat";
@@ -216,6 +513,7 @@ body main .info hr {
   border: none;
   border-radius: 5px;
   margin: 0 91px 0;
+  margin-top: 304px;
 }
 body main .info p {
   margin-top: 17px;
@@ -351,10 +649,6 @@ body main .ribbon {
   width: 100%;
   background-color: #60B7D9;
   margin-top: 100px;
-<<<<<<< HEAD
-=======
-  margin-bottom: 100px;
->>>>>>> main
   align-items: center;
   justify-content: center;
   box-shadow: 0px 49px 14px rgba(0, 0, 0, 0.01), 0px 31px 12px rgba(0, 0, 0, 0.04), 0px 18px 11px rgba(0, 0, 0, 0.15), 0px 8px 8px rgba(0, 0, 0, 0.26), 0px 2px 4px rgba(0, 0, 0, 0.29), 0px 0px 0px rgba(0, 0, 0, 0.3);
@@ -369,7 +663,6 @@ body main .ribbon h3 {
   margin: 18px 0 18px 0;
   text-align: center;
 }
-<<<<<<< HEAD
 body main .document h2 {
   font-family: "Oswald";
   font-size: 48px;
@@ -436,9 +729,12 @@ body main .question form input {
   padding: 14px 12px;
   width: 100%;
   font-family: "Montserrat";
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   line-height: 27.9px;
+}
+body main .question form input:focus-visible {
+  outline: 2px solid #F1524F;
 }
 body main .question form .name {
   margin-top: 27px;
@@ -459,6 +755,9 @@ body main .question form .message {
   font-size: 18px;
   line-height: 27.9px;
 }
+body main .question form .message:focus-visible {
+  outline: 2px solid #F1524F;
+}
 body main .question form button {
   border: none;
   border-radius: 10px;
@@ -474,6 +773,9 @@ body main .question form button {
 body main .question form button:hover {
   background-color: #CC4744;
   cursor: pointer;
+}
+body main .question form button button:focus-visible {
+  outline: 2px solid #F1524F;
 }
 body main .question form div {
   display: flex;
@@ -536,13 +838,206 @@ body main .question form div label a:hover {
   color: #F1524F;
   cursor: pointer;
 }
+body main .breadcrump-path li {
+  display: inline;
+  font-family: "Montserrat";
+  font-weight: 600;
+  line-height: 24.38px;
+  font-size: 20px;
+  color: #838383;
+}
+body main .breadcrump-path li + li::before {
+  padding: 8px;
+  content: "–";
+}
+body main .breadcrump-path li a {
+  color: #838383;
+  text-decoration: none;
+}
+body main .breadcrump-path li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+body main .about-company {
+  margin-top: 8px;
+  margin-bottom: 227px;
+  border-radius: 100px;
+  padding: 66px 170px;
+  font-family: "Montserrat";
+  line-height: 155%;
+  box-shadow: 0px 107px 107px rgba(112, 167, 195, 0.21), 0px 27px 59px rgba(112, 167, 195, 0.25), 0px 0px 0px rgba(112, 167, 195, 0.25);
+}
+body main .about-company svg {
+  position: relative;
+  top: -23px;
+  left: -41px;
+}
+body main .about-company article {
+  font-weight: 600;
+  font-size: 26px;
+}
+body main .about-company p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 155%;
+  margin-top: 8px;
+  text-align: justify;
+}
+body main .about-company p span {
+  font-weight: 500;
+}
+body main .contacts {
+  margin-top: 94px;
+}
+body main .contacts .contacts-company {
+  padding: 14px 103px;
+  display: flex;
+}
+body main .contacts .contacts-company-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 29.26px;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+body main .contacts .contacts-company-details .address {
+  width: 100%;
+}
+body main .contacts .contacts-company-details .phone-number {
+  margin-right: 65px;
+}
+body main .contacts .contacts-company-details .details {
+  width: 100%;
+}
+body main .contacts .contacts-company-details h4 {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 29.26px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+body main .contacts .contacts-company-details p {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 29.26px;
+  font-weight: 400;
+  margin-top: 0;
+}
+body main .contacts iframe {
+  width: 65%;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  margin: -13px -103px;
+}
 body footer {
   background: linear-gradient(90deg, #F14F54 14.4%, #FF8F20 86.8%);
   margin-top: 108px;
-=======
+}
+body footer .bottom {
+  padding-top: 44px;
+  padding-bottom: 85.65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+body footer .bottom .company {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-right: 30px;
+}
+body footer .bottom .company h5 {
+  display: flex;
+  margin-bottom: 22px;
+}
+body footer .bottom .company h5 svg {
+  margin-right: 9px;
+}
+body footer .bottom .company h5 span {
+  font-family: "Oswald";
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+body footer .bottom .company p {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.38px;
+}
+body footer .bottom .site {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+body footer .bottom .site a {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 200%;
+  color: #ffffff;
+  text-decoration: none;
+}
+body footer .bottom .site a:hover {
+  cursor: pointer;
+}
+body footer .bottom .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 10px;
+}
+body footer .bottom .address p {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+body footer hr {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+body footer .copy {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+body footer .copy p {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 21.94px;
+  color: #ffffff;
+}
+body footer .ribbon {
+  display: flex;
+  width: 100%;
+  background-color: #60B7D9;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 49px 14px rgba(0, 0, 0, 0.01), 0px 31px 12px rgba(0, 0, 0, 0.04), 0px 18px 11px rgba(0, 0, 0, 0.15), 0px 8px 8px rgba(0, 0, 0, 0.26), 0px 2px 4px rgba(0, 0, 0, 0.29), 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+body footer .ribbon h3 {
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.51px;
+  color: #ffffff;
+  width: 30%;
+  margin: 18px 0 18px 0;
+  text-align: center;
+}
 body footer {
   background: linear-gradient(90deg, #F14F54 14.4%, #FF8F20 86.8%);
->>>>>>> main
 }
 body footer .bottom {
   padding-top: 44px;
